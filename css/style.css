@@ -1,0 +1,31 @@
+/*! CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*! CUSTOM PROPERTIES */
+
+:root{
+    --skyblue: rgb(0,108,250);
+    --green: rgb(0,225,101);
+}
+
+/*! GENERICS */
+
+body{
+    color: white;
+}
+
+/*! COL STYLE */
+
+.row > [class^='col']{
+    background-color: var(--skyblue);
+    border: 1px solid white;
+}
+
+.row > [class^='col'] [class^='col']{
+    background-color: var(--green);
+}
