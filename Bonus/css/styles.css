@@ -16,6 +16,12 @@
 
 /*! GENERICS */
 
+body{
+    background-color: black;
+    color: white;
+    padding-top: 5rem;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -26,7 +32,7 @@
 }
 
 header *{
-    text-align: center;
+     text-align: center;
 }
 
 /*! UTILS */
@@ -60,4 +66,34 @@ main [class*="col"]{
 
 .secondary{
     background-color: var(--secondary);
+}
+
+/*! ANIMATIONS  */
+
+.fa-caret-left{
+    position: relative;
+    animation: bounce 0.5s infinite alternate;
+}
+
+.fa-caret-right{
+    position: relative;
+    animation: bounce2 0.5s infinite alternate;
+}
+
+@keyframes bounce{
+    from{
+        left: 0;
+    }
+    to{
+        left: -10px
+    }
+}
+
+@keyframes bounce2{
+    from{
+        right: 0;
+    }
+    to{
+        right: -10px
+    }
 }
