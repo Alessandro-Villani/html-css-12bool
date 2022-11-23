@@ -6,12 +6,61 @@
     box-sizing: border-box;
 }
 
+/*! DISPLAY */
+
+.d-none{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+/*! ALIGNMENTS */
+
+.jc-start{
+    justify-content: flex-start;
+}
+
+.jc-end{
+    justify-content: flex-end;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.ai-start{
+    align-items: flex-start;
+}
+
+.ai-end{
+    align-items: flex-end;
+}
+
+.ai-center{
+    align-items: center;
+}
+
 /*! ROW */
 
 .row{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 /*!COLUMN */
 

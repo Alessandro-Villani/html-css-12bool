@@ -19,13 +19,34 @@ body{
     color: white;
 }
 
+h1{
+    color: black;
+}
+
+.row{
+    margin-bottom: 2rem;
+}
+
+[class^='col'] > .row{
+    margin-bottom: 0;
+}
+
 /*! COL STYLE */
+
+[class^='col']{
+    min-height: 4.5rem;
+    text-align: center;
+    line-height: 2.25rem;
+}
 
 .row > [class^='col']{
     background-color: var(--skyblue);
     border: 1px solid white;
+    padding: 1rem;
 }
 
 .row > [class^='col'] [class^='col']{
     background-color: var(--green);
+    border: 1px solid var(--skyblue);
+    min-height: 100%;
 }
